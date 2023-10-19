@@ -161,6 +161,8 @@ class CavebotPage(tk.Frame):
             coordinate = (coordinate[0] + 1, coordinate[1], coordinate[2])
         elif waypointDirection == 'west':
             coordinate = (coordinate[0] - 1, coordinate[1], coordinate[2])
+        elif waypointDirection == 'center' and waypointType == 'walk':
+            options = {}
         waypoint = {'label': '', 'type': waypointType,
                     'coordinate': coordinate, 'options': options}
         if waypointType == 'moveUp' or waypointType == 'moveDown':
