@@ -1,3 +1,4 @@
+import time
 from src.shared.typings import BBox, Slot
 from src.utils.mouse import leftClick, moveTo, rightClick
 
@@ -9,8 +10,8 @@ def getSlotPosition(slot: Slot, gameWindowPosition: BBox) -> Slot:
     (slotX, slotY) = slot
     slotHeight = gameWindowHeight // 11
     slotWidth = gameWindowWidth // 15
-    slotXCoordinate = gameWindowPositionX + (slotX * slotWidth)
-    slotYCoordinate = gameWindowPositionY + (slotY * slotHeight)
+    slotXCoordinate = gameWindowPositionX + (slotX * slotWidth) + 20
+    slotYCoordinate = gameWindowPositionY + (slotY * slotHeight) + 20
     return (slotXCoordinate, slotYCoordinate)
 
 
@@ -33,4 +34,5 @@ def clickSlot(slot: Slot, gameWindowPosition: BBox):
 def rightClickSlot(slot: Slot, gameWindowPosition: BBox):
     moveToSlot(slot, gameWindowPosition)
     rightClick()
+    time.sleep(0.01)
 

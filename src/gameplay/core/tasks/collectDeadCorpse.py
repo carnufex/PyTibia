@@ -66,4 +66,7 @@ class CollectDeadCorpseTask(BaseTask):
             for index, corpseToLoot in enumerate(context['loot']['corpsesToLoot']):
                 if gameplayUtils.coordinatesAreEqual(coordinate, corpseToLoot['coordinate']):
                     context['loot']['corpsesToLoot'].pop(index)
+                else: # crilles else
+                    if (index == len(context['loot']['corpsesToLoot'])-1):
+                        context['loot']['corpsesToLoot'].pop(index)
         return context
