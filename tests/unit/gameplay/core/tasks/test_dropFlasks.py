@@ -5,8 +5,7 @@ from src.gameplay.core.tasks.openBackpack import OpenBackpackTask
 from src.gameplay.core.tasks.setNextWaypoint import SetNextWaypointTask
 
 
-context = {'backpacks': {'main': 'Beach Backpack'}}
-
+context = {'backpacks': {'main': 'beach backpack'}}
 
 def test_should_test_default_params():
     task = DropFlasksTask()
@@ -14,7 +13,6 @@ def test_should_test_default_params():
     assert task.delayBeforeStart == 1
     assert task.delayAfterComplete == True
     assert task.isRootTask == True
-
 
 def test_onBeforeStart():
     task = DropFlasksTask()

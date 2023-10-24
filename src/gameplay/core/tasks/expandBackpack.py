@@ -8,6 +8,8 @@ from .common.base import BaseTask
 
 # TODO: ignore when backpack already expanded
 # TODO: check if backpack is expanded on did
+# TODO: ignore when backpack already expanded
+# TODO: check if backpack is expanded on did
 class ExpandBackpackTask(BaseTask):
     def __init__(self, backpack: str):
         super().__init__()
@@ -15,6 +17,7 @@ class ExpandBackpackTask(BaseTask):
         self.delayBeforeStart = 1
         self.delayAfterComplete = 1
         self.terminable = False
+        self.backpack = backpack
         self.backpack = backpack
 
     # TODO: add unit tests
