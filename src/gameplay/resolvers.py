@@ -1,4 +1,7 @@
 from typing import Union
+
+from .core.tasks.goDownHoleWaypoint import GoDownHoleWaypointTask
+from .core.tasks.useLadderWaypoint import UseLadderWaypointTask
 from src.shared.typings import Waypoint
 from .core.tasks.common.base import BaseTask
 from .core.tasks.common.vector import VectorTask
@@ -13,6 +16,7 @@ from .core.tasks.singleWalk import SingleWalkTask
 from .core.tasks.useRopeWaypoint import UseRopeWaypointTask
 from .core.tasks.useShovelWaypoint import UseShovelWaypointTask
 from .core.tasks.walkToWaypoint import WalkToWaypointTask
+from .core.tasks.useHole import UseHoleTask
 
 
 # TODO: add unit tests
@@ -39,5 +43,9 @@ def resolveTasksByWaypoint(waypoint: Waypoint) -> Union[BaseTask, VectorTask]:
         return UseRopeWaypointTask(waypoint)
     elif waypoint['type'] == 'useShovel':
         return UseShovelWaypointTask(waypoint)
+    elif waypoint['type'] == 'useLadder':
+        return UseLadderWaypointTask(waypoint)
+    elif waypoint['type'] == 'goDownHole':
+        return GoDownHoleWaypointTask(waypoint)
     elif waypoint['type'] == 'walk':
         return WalkToWaypointTask(waypoint['coordinate'])

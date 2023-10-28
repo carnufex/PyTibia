@@ -9,7 +9,8 @@ class MoveDown(BaseTask):
         self.name = 'moveDown'
         self.isRootTask = True
         self.direction = direction
-        self.floorLevel = context['radar']['coordinate'][2] + 1
+        # self.floorLevel = context['radar']['coordinate'][2] + 1
+        self.floorLevel = context['cavebot']['waypoints']['items'][context['cavebot']['waypoints']['currentIndex']]['coordinate'][2] + 1
 
     # TODO: add unit tests
     # TODO: improve this code

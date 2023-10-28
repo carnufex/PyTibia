@@ -93,10 +93,21 @@ def resolveUseRopeWaypointCoordinate(_, nextCoordinate: Coordinate) -> Checkpoin
 
 
 # TODO: add unit tests
-def resolveUseHoleCoordinate(_, nextCoordinate: Coordinate) -> Checkpoint:
+def resolveUseHoleCoordinate(coordinate, nextCoordinate: Coordinate) -> Checkpoint:
+    availableAroundCoordinates = getAvailableAroundCoordinates(
+        nextCoordinate, walkableFloorsSqms[nextCoordinate[2]])
+    closestCoordinate = getClosestCoordinate(
+        coordinate, availableAroundCoordinates)
+    checkInCoordinate = [nextCoordinate[0], nextCoordinate[1], nextCoordinate[2] + 1]
+    return {
+        'goalCoordinate': closestCoordinate,
+        'checkInCoordinate': checkInCoordinate,
+    }
+
+def resolveUseLadderCoordinate(_, nextCoordinate: Coordinate) -> Checkpoint:
     return {
         'goalCoordinate': nextCoordinate,
-        'checkInCoordinate': [nextCoordinate[0], nextCoordinate[1], nextCoordinate[2] + 1],
+        'checkInCoordinate': [nextCoordinate[0], nextCoordinate[1] + 1, nextCoordinate[2] - 1],
     }
 
 
@@ -110,6 +121,8 @@ def resolveGoalCoordinate(coordinate: Coordinate, waypoint):
         return resolveMoveDownCoordinate(coordinate, waypoint)
     if waypoint['type'] == 'moveUp':
         return resolveMoveUpCoordinate(coordinate, waypoint)
-    if waypoint['type'] == 'useHole':
+    if waypoint['type'] == 'goDownHole':
         return resolveUseHoleCoordinate(coordinate, waypoint['coordinate'])
+    if waypoint['type'] == 'useLadder':
+        return resolveUseLadderCoordinate(coordinate, waypoint['coordinate'])
     return resolveFloorCoordinate(coordinate, waypoint['coordinate'])
