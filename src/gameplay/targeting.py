@@ -11,7 +11,12 @@ def hasCreaturesToAttack(context: Context) -> bool:
         return True
     ignorableGameWindowCreatures = []
     for gameWindowCreature in context['gameWindow']['monsters']:
-        shouldIgnoreCreature = context['targeting']['creatures'].get(gameWindowCreature['name'], { 'ignore': False })['ignore']
+        # ignore creatures
+        if (gameWindowCreature['name'] in context['cavebot']['ignoreCreatures']):
+            shouldIgnoreCreature = context['targeting']['creatures'].get(gameWindowCreature['name'], { 'ignore': True })['ignore']
+        else:
+            shouldIgnoreCreature = context['targeting']['creatures'].get(gameWindowCreature['name'], { 'ignore': False })['ignore']
+        
         if shouldIgnoreCreature:
             context['targeting']['hasIgnorableCreatures'] = True
             ignorableGameWindowCreatures.append(gameWindowCreature)

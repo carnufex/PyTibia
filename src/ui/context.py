@@ -34,6 +34,7 @@ class Context:
                 },
                 'cavebot': {
                     'enabled': False,
+                    'ignoreCreatures': [],
                     'waypoints': {
                         'items': []
                     }

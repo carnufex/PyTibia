@@ -6,6 +6,7 @@ def loadContextFromConfig(config, context):
     # cavebot
     context['cavebot']['enabled'] = config['cavebot']['enabled']
     context['cavebot']['waypoints']['items'] = config['cavebot']['waypoints']['items'].copy()
+    context['cavebot']['ignoreCreatures'] = config['cavebot']['ignoreCreatures'].copy()
     # comboSpells
     context['comboSpells']['enabled'] = config['comboSpells']['enabled']
     for comboSpellsItem in config['comboSpells']['items']:

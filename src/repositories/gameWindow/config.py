@@ -19,10 +19,10 @@ images = {
         'rightGameWindow11': loadFromRGBToGray(f'{arrowsImagesPath}/rightGameWindow11.png'),
     },
     720: {
-        'holeOpen': loadFromRGBToGray(f'{waypointsImagesPath}/holeOpen720.png')
+        'holeOpen': [loadFromRGBToGray(f'{waypointsImagesPath}/holeOpen720.png')]
     },
     1080: {
-        'holeOpen': loadFromRGBToGray(f'{waypointsImagesPath}/holeOpen1080.png')
+        'holeOpen': [loadFromRGBToGray(f'{waypointsImagesPath}/holeOpen1080.png'), loadFromRGBToGray(f'{waypointsImagesPath}/dirtHoleOpen1080.png')]
     }
 }
 arrowsImagesHashes = {

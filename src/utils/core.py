@@ -11,7 +11,7 @@ from PIL import Image
 from ctypes import windll
 
 
-camera = dxcam.create(output_color='BGRA')
+# camera = dxcam.create(output_color='BGRA', output_idx=2)
 latestScreenshot = None
 
 
@@ -70,7 +70,6 @@ def locateMultiple(compareImg: GrayImage, img: GrayImage, confidence: float = 0.
     return resultList
 
 def region_grabber():
-    start = time.time()
     hwnd = win32gui.FindWindow(None, 'Fullscreen Projector (Scene) - Scene')
 
     left, top, right, bot = win32gui.GetWindowRect(hwnd)
@@ -112,7 +111,6 @@ def region_grabber():
         #PrintWindow Succeeded
         # Save the image as a PNG file
         # im.save("test.png")
-        end = time.time()
         #print("TIME: ", end - start)
         im = np.array(im)
         return im
@@ -127,5 +125,4 @@ def getScreenshot() -> GrayImage:
     if screenshot is None:
         return latestScreenshot
     latestScreenshot = cv2.cvtColor(screenshot, cv2.COLOR_BGRA2GRAY)
-    # cv2.imwrite('output.png', latestScreenshot)
     return latestScreenshot
