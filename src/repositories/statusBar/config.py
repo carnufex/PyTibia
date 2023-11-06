@@ -8,9 +8,13 @@ iconsPath = f'{currentPath}/images/icons'
 images = {
     'icons': {
         'hp': loadFromRGBToGray(f'{iconsPath}/heart.png'),
-        'mana': loadFromRGBToGray(f'{iconsPath}/mana.png')
+        'mana': loadFromRGBToGray(f'{iconsPath}/mana.png'),
+        'paralyze': loadFromRGBToGray(f'{iconsPath}/paralyze.png'),
+        'stopButton': loadFromRGBToGray(f'{iconsPath}/stopButton.png'),
     }
 }
 hpBarAllowedPixelsColors = np.array([79, 118, 121, 110, 62])
 barSize = 94
 manaBarAllowedPixelsColors = np.array([68, 95, 97, 89, 52])
+
+statusBarOffset = 120

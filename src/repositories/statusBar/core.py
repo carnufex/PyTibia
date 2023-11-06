@@ -1,11 +1,12 @@
 from numba import njit
 from typing import Union
+from src.utils.image import save
 from src.shared.typings import GrayImage
 from .config import hpBarAllowedPixelsColors, manaBarAllowedPixelsColors
-from .extractors import getHpBar, getManaBar
-from .locators import getHpIconPosition, getManaIconPosition
+from .extractors import getHpBar, getManaBar, getStatusBar
+from .locators import getHpIconPosition, getManaIconPosition, getStopButtonPosition, getParalyze
 
-
+from PIL import Image
 # TODO: add parameters types
 # TODO: add unit tests
 # TODO: add perf
@@ -36,3 +37,12 @@ def getManaPercentage(screenshot: GrayImage) -> Union[int, None]:
         return None
     bar = getManaBar(screenshot, manaIconPosition)
     return getFilledBarPercentage(bar, allowedPixelsColors=manaBarAllowedPixelsColors)
+
+def getIsParalyzed(screenshot: GrayImage) -> bool:
+    stopButtonPosition = getStopButtonPosition(screenshot)
+    if stopButtonPosition is None:
+        return None
+    statusBarImg = getStatusBar(screenshot, stopButtonPosition)
+    isParalyzed = getParalyze(statusBarImg)
+    return isParalyzed
+

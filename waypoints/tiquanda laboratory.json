@@ -1,0 +1,212 @@
+{
+  "_default": {
+    "1": {
+      "enabled": true,
+      "config": {
+        "backpacks": { "main": "Brocade Backpack", "loot": "Beach Backpack" },
+        "cavebot": {
+          "enabled": false,
+          "ignoreCreatures": ["Spider"],
+          "waypoints": {
+            "items": [
+              {
+                "label": "",
+                "type": "walk",
+                "coordinate": [32905, 32566, 10],
+                "options": {}
+              },
+              {
+                "label": "",
+                "type": "walk",
+                "coordinate": [32910, 32562, 10],
+                "options": {}
+              },
+              {
+                "label": "",
+                "type": "walk",
+                "coordinate": [32914, 32555, 10],
+                "options": {}
+              },
+              {
+                "label": "",
+                "type": "walk",
+                "coordinate": [32922, 32554, 10],
+                "options": {}
+              },
+              {
+                "label": "",
+                "type": "walk",
+                "coordinate": [32933, 32547, 10],
+                "options": {}
+              },
+              {
+                "label": "",
+                "type": "walk",
+                "coordinate": [32920, 32567, 10],
+                "options": {}
+              },
+              {
+                "label": "",
+                "type": "walk",
+                "coordinate": [32934, 32571, 10],
+                "options": {}
+              },
+              {
+                "label": "",
+                "type": "walk",
+                "coordinate": [32950, 32567, 10],
+                "options": {}
+              },
+              {
+                "label": "",
+                "type": "walk",
+                "coordinate": [32944, 32581, 10],
+                "options": {}
+              },
+              {
+                "label": "",
+                "type": "walk",
+                "coordinate": [32949, 32594, 10],
+                "options": {}
+              },
+              {
+                "label": "",
+                "type": "walk",
+                "coordinate": [32930, 32584, 10],
+                "options": {}
+              },
+              {
+                "label": "",
+                "type": "walk",
+                "coordinate": [32915, 32585, 10],
+                "options": {}
+              },
+              {
+                "label": "",
+                "type": "walk",
+                "coordinate": [32908, 32581, 10],
+                "options": {}
+              }
+            ]
+          }
+        },
+        "comboSpells": {
+          "enabled": true,
+          "items": [
+            {
+              "enabled": true,
+              "name": "3 ou -",
+              "creatures": { "compare": "greaterThanOrEqual", "value": 3 },
+              "spells": [{ "name": "exori", "hotkey": "f1" }],
+              "currentSpellIndex": 0
+            },
+            {
+              "enabled": false,
+              "name": "3 ou -",
+              "creatures": { "compare": "lessThan", "value": 2 },
+              "spells": [
+                { "name": "exori", "hotkey": "f1" },
+                { "name": "exori gran", "hotkey": "f2" },
+                { "name": "exori", "hotkey": "f1" },
+                { "name": "exori min", "hotkey": "f6" },
+                { "name": "exori", "hotkey": "f1" }
+              ],
+              "currentSpellIndex": 0
+            },
+            {
+              "enabled": false,
+              "name": "4 ou +",
+              "creatures": { "compare": "greaterThanOrEqual", "value": 3 },
+              "spells": [
+                { "name": "exori gran", "hotkey": "f2" },
+                { "name": "exori mas", "hotkey": "f5" },
+                { "name": "exori", "hotkey": "f1" },
+                { "name": "exori gran", "hotkey": "f2" },
+                { "name": "exori mas", "hotkey": "f5" }
+              ],
+              "currentSpellIndex": 0
+            }
+          ]
+        },
+        "healing": {
+          "highPriority": {
+            "healthFood": {
+              "enabled": false,
+              "hotkey": "3",
+              "hpPercentageLessThanOrEqual": 60
+            },
+            "manaFood": {
+              "enabled": false,
+              "hotkey": "4",
+              "manaPercentageLessThanOrEqual": 10
+            },
+            "swapRing": {
+              "enabled": false,
+              "tankRing": {
+                "hotkey": "f11",
+                "hpPercentageLessThanOrEqual": 100
+              },
+              "mainRing": { "hotkey": "f12", "hpPercentageGreaterThan": 100 },
+              "tankRingAlwaysEquipped": true
+            },
+            "swapAmulet": {
+              "enabled": false,
+              "tankAmulet": {
+                "hotkey": "u",
+                "hpPercentageLessThanOrEqual": 50
+              },
+              "mainAmulet": { "hotkey": "i", "hpPercentageGreaterThan": 90 },
+              "tankAmuletAlwaysEquipped": false
+            }
+          },
+          "potions": {
+            "firstHealthPotion": {
+              "enabled": true,
+              "hotkey": "1",
+              "hpPercentageLessThanOrEqual": 30,
+              "manaPercentageGreaterThanOrEqual": 0
+            },
+            "firstManaPotion": {
+              "enabled": true,
+              "hotkey": "2",
+              "manaPercentageLessThanOrEqual": 50
+            }
+          },
+          "spells": {
+            "criticalHealing": {
+              "enabled": false,
+              "hotkey": "5",
+              "hpPercentageLessThanOrEqual": 70,
+              "manaPercentageGreaterThanOrEqual": 20,
+              "spell": "exura med ico"
+            },
+            "lightHealing": {
+              "enabled": true,
+              "hotkey": "6",
+              "hpPercentageLessThanOrEqual": 80,
+              "manaPercentageGreaterThanOrEqual": 20,
+              "spell": "exura ico"
+            },
+            "utura": {
+              "enabled": false,
+              "hotkey": "7",
+              "hpPercentageLessThanOrEqual": 70,
+              "manaPercentageGreaterThanOrEqual": 30
+            },
+            "uturaGran": {
+              "enabled": false,
+              "hotkey": "8",
+              "hpPercentageLessThanOrEqual": 70,
+              "manaPercentageGreaterThanOrEqual": 30
+            }
+          },
+          "eatFood": {
+            "enabled": true,
+            "hotkey": "f",
+            "eatWhenFoodIslessOrEqual": 0
+          }
+        }
+      }
+    }
+  }
+}

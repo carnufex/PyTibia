@@ -1,24 +1,26 @@
-import src.repositories.gameWindow.creatures as gameWindowCreatures
-import src.utils.core
-import src.repositories.battleList.core
-import src.repositories.battleList.extractors
-import src.repositories.gameWindow.config
-import src.repositories.gameWindow.core
+# import src.repositories.gameWindow.creatures as gameWindowCreatures
+# import src.utils.core
+# import src.repositories.battleList.core
+# import src.repositories.battleList.extractors
+# import src.repositories.gameWindow.config
+# import src.repositories.gameWindow.core
 
 
 
-grayScreenshot = src.utils.core.getScreenshot()
-radarCoordinate = src.repositories.radar.core.getCoordinate(grayScreenshot)
-content = src.repositories.battleList.extractors.getContent(grayScreenshot)
-battleListCreatures = src.repositories.battleList.core.getCreatures(content)
-beingAttackedCreatureCategory = src.repositories.battleList.core.getBeingAttackedCreatureCategory(battleListCreatures)
-gameWindowSize = src.repositories.gameWindow.config.gameWindowSizes[1080]
-gameWindowCoordinate = src.repositories.gameWindow.core.getCoordinate(grayScreenshot, gameWindowSize)
-gameWindowImg = src.repositories.gameWindow.core.getImageByCoordinate(grayScreenshot, gameWindowCoordinate, gameWindowSize)
-gameWindowCreaturess = src.repositories.gameWindow.creatures.getCreatures(battleListCreatures, 'left', gameWindowCoordinate, gameWindowImg, radarCoordinate,beingAttackedCreatureCategory=beingAttackedCreatureCategory)
-isTrapped = gameWindowCreatures.isTrappedByCreatures(gameWindowCreaturess, radarCoordinate)
+# grayScreenshot = src.utils.core.getScreenshot()
+# radarCoordinate = src.repositories.radar.core.getCoordinate(grayScreenshot)
+# content = src.repositories.battleList.extractors.getContent(grayScreenshot)
+# battleListCreatures = src.repositories.battleList.core.getCreatures(content)
+# beingAttackedCreatureCategory = src.repositories.battleList.core.getBeingAttackedCreatureCategory(battleListCreatures)
+# gameWindowSize = src.repositories.gameWindow.config.gameWindowSizes[1080]
+# gameWindowCoordinate = src.repositories.gameWindow.core.getCoordinate(grayScreenshot, gameWindowSize)
+# gameWindowImg = src.repositories.gameWindow.core.getImageByCoordinate(grayScreenshot, gameWindowCoordinate, gameWindowSize)
+# gameWindowCreaturess = src.repositories.gameWindow.creatures.getCreatures(battleListCreatures, 'left', gameWindowCoordinate, gameWindowImg, radarCoordinate,beingAttackedCreatureCategory=beingAttackedCreatureCategory)
+# isTrapped = gameWindowCreatures.isTrappedByCreatures(gameWindowCreaturess, radarCoordinate)
 
-print('isTrapped', isTrapped)
+# print('isTrapped', isTrapped)
+
+
 import time
 import cv2
 import dxcam
@@ -34,18 +36,17 @@ import pathlib
 from src.repositories.chat.core import getTabs, hasNewLoot, getLootLines
 from src.utils.image import loadFromRGBToGray
 
+from PIL import Image
 
 
-
-
-camera = dxcam.create(output_color='BGRA')
+camera = dxcam.create(output_color='BGRA', output_idx=2)
 latestScreenshot = None
 
 
 
 def region_grabber():
     start = time.time()
-    hwnd = win32gui.FindWindow(None, 'Fullscreen Projector (Preview)')
+    hwnd = win32gui.FindWindow(None, 'Fullscreen Projector (Scene) - Scene')
 
 
     left, top, right, bot = win32gui.GetWindowRect(hwnd)
@@ -86,7 +87,7 @@ def region_grabber():
     if result == 1:
         #PrintWindow Succeeded
         # Save the image as a PNG file
-        im.save("test.png")
+        # im.save("test.png")
         end = time.time()
         #print("TIME: ", end - start)
         im = np.array(im)
@@ -98,7 +99,9 @@ def region_grabber():
 # TODO: add unit tests
 def getScreenshot():
     global camera, latestScreenshot
-    screenshot = region_grabber()
+    # screenshot = region_grabber()
+    screenshot = camera.grab()
+    Image.fromarray(screenshot).show()
     if screenshot is None:
         return latestScreenshot
     latestScreenshot = cv2.cvtColor(screenshot, cv2.COLOR_BGRA2GRAY)
@@ -106,16 +109,15 @@ def getScreenshot():
 
 
 
-def testTabs():
-    currentPath = pathlib.Path(__file__).parent.resolve()
-    screenshot = loadFromRGBToGray(f'{currentPath}/screenshot.png')
-    x = getLootLines(screenshot)
-    print(x)
 
 
-# testTabs()
 
-
-data = [{'slot': (2, 3)},{'slot': (2, 3)},{'slot': (2, 3)}]
-creaturesSlots = [(y, x) for item in data for x, y in [item['slot']]]
-print(creaturesSlots[:,0])
+while True:
+    try:
+        fps = 1 / (time.time() - loop_time)
+        print(f'FPS {fps}', flush=True)
+    except:
+        pass
+    loop_time = time.time()
+    x = getScreenshot()
+    break

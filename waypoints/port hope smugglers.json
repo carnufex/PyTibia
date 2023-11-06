@@ -1,0 +1,155 @@
+"waypoints": {
+    "items": [
+      {
+        "label": "",
+        "type": "walk",
+        "coordinate": [32551, 32669, 8],
+        "options": {}
+      },
+      {
+        "label": "",
+        "type": "walk",
+        "coordinate": [32549, 32679, 8],
+        "options": {}
+      },
+      {
+        "label": "",
+        "type": "walk",
+        "coordinate": [32561, 32679, 8],
+        "options": {}
+      },
+      {
+        "label": "",
+        "type": "walk",
+        "coordinate": [32559, 32668, 8],
+        "options": {}
+      },
+      {
+        "label": "goDown",
+        "type": "goDownHole",
+        "coordinate": [32559, 32667, 8],
+        "options": { "direction": "north" }
+      },
+      {
+        "label": "",
+        "type": "walk",
+        "coordinate": [32543, 32667, 9],
+        "options": {}
+      },
+      {
+        "label": "",
+        "type": "walk",
+        "coordinate": [32553, 32650, 9],
+        "options": {}
+      },
+      {
+        "label": "",
+        "type": "walk",
+        "coordinate": [32557, 32647, 9],
+        "options": {}
+      },
+      {
+        "label": "goDown",
+        "type": "goDownHole",
+        "coordinate": [32557, 32646, 9],
+        "options": { "direction": "north" }
+      },
+      {
+        "label": "",
+        "type": "walk",
+        "coordinate": [32562, 32640, 10],
+        "options": {}
+      },
+      {
+        "label": "",
+        "type": "walk",
+        "coordinate": [32557, 32646, 10],
+        "options": {}
+      },
+      {
+        "label": "ladder",
+        "type": "useLadder",
+        "coordinate": [32557, 32646, 10],
+        "options": {}
+      },
+      {
+        "label": "",
+        "type": "walk",
+        "coordinate": [32538, 32673, 9],
+        "options": {}
+      },
+      {
+        "label": "",
+        "type": "walk",
+        "coordinate": [32528, 32682, 9],
+        "options": {}
+      },
+      {
+        "label": "goDown",
+        "type": "goDownHole",
+        "coordinate": [32528, 32681, 9],
+        "options": { "direction": "north" }
+      },
+      {
+        "label": "",
+        "type": "walk",
+        "coordinate": [32535, 32666, 10],
+        "options": {}
+      },
+      {
+        "label": "",
+        "type": "walk",
+        "coordinate": [32543, 32643, 10],
+        "options": {}
+      },
+      {
+        "label": "",
+        "type": "walk",
+        "coordinate": [32531, 32669, 10],
+        "options": {}
+      },
+      {
+        "label": "",
+        "type": "walk",
+        "coordinate": [32528, 32681, 10],
+        "options": {}
+      },
+      {
+        "label": "ladder",
+        "type": "useLadder",
+        "coordinate": [32528, 32681, 10],
+        "options": {}
+      },
+      {
+        "label": "",
+        "type": "walk",
+        "coordinate": [32536, 32687, 9],
+        "options": {}
+      },
+      {
+        "label": "",
+        "type": "walk",
+        "coordinate": [32548, 32669, 9],
+        "options": {}
+      },
+      {
+        "label": "",
+        "type": "walk",
+        "coordinate": [32559, 32667, 9],
+        "options": {}
+      },
+      {
+        "label": "ladder",
+        "type": "useLadder",
+        "coordinate": [32559, 32667, 9],
+        "options": {}
+      },
+      {
+        "label": "",
+        "type": "walk",
+        "coordinate": [32555, 32670, 8],
+        "options": {}
+      }
+    ]
+  }
+},

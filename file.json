@@ -6,108 +6,269 @@
         "backpacks": { "main": "Brocade Backpack", "loot": "Beach Backpack" },
         "cavebot": {
           "enabled": false,
+          "ignoreCreatures": ["Spider"],
           "waypoints": {
             "items": [
               {
                 "label": "",
-                "type": "walk",
-                "coordinate": [32944, 32104, 10],
-                "options": {}
+                "type": "toggleTargeting",
+                "coordinate": [],
+                "options": { "setTargeting": "off" }
               },
               {
                 "label": "",
                 "type": "walk",
-                "coordinate": [32964, 32082, 10],
+                "coordinate": [33405, 31693, 11],
                 "options": {}
               },
               {
                 "label": "",
-                "type": "walk",
-                "coordinate": [32968, 32052, 10],
-                "options": {}
+                "type": "toggleTargeting",
+                "coordinate": [],
+                "options": { "setTargeting": "on" }
+              },
+              {
+                "label": "",
+                "type": "toggleTargeting",
+                "coordinate": [],
+                "options": { "setTargeting": "off" }
               },
               {
                 "label": "",
                 "type": "walk",
-                "coordinate": [32980, 32039, 10],
+                "coordinate": [33406, 31677, 11],
                 "options": {}
               },
               {
                 "label": "",
-                "type": "walk",
-                "coordinate": [33008, 32040, 10],
-                "options": {}
+                "type": "toggleTargeting",
+                "coordinate": [],
+                "options": { "setTargeting": "on" }
+              },
+              {
+                "label": "",
+                "type": "toggleTargeting",
+                "coordinate": [],
+                "options": { "setTargeting": "off" }
               },
               {
                 "label": "",
                 "type": "walk",
-                "coordinate": [33008, 32060, 10],
+                "coordinate": [33407, 31662, 11],
                 "options": {}
               },
               {
                 "label": "",
-                "type": "walk",
-                "coordinate": [32994, 32076, 10],
-                "options": {}
+                "type": "toggleTargeting",
+                "coordinate": [],
+                "options": { "setTargeting": "on" }
+              },
+              {
+                "label": "",
+                "type": "toggleTargeting",
+                "coordinate": [],
+                "options": { "setTargeting": "off" }
               },
               {
                 "label": "",
                 "type": "walk",
-                "coordinate": [32960, 32086, 10],
+                "coordinate": [33407, 31646, 11],
                 "options": {}
               },
               {
                 "label": "",
-                "type": "walk",
-                "coordinate": [32958, 32114, 10],
-                "options": {}
+                "type": "toggleTargeting",
+                "coordinate": [],
+                "options": { "setTargeting": "on" }
+              },
+              {
+                "label": "",
+                "type": "toggleTargeting",
+                "coordinate": [],
+                "options": { "setTargeting": "off" }
               },
               {
                 "label": "",
                 "type": "walk",
-                "coordinate": [32971, 32100, 10],
+                "coordinate": [33382, 31645, 11],
                 "options": {}
               },
               {
                 "label": "",
-                "type": "walk",
-                "coordinate": [32988, 32102, 10],
-                "options": {}
+                "type": "toggleTargeting",
+                "coordinate": [],
+                "options": { "setTargeting": "on" }
+              },
+              {
+                "label": "",
+                "type": "toggleTargeting",
+                "coordinate": [],
+                "options": { "setTargeting": "off" }
               },
               {
                 "label": "",
                 "type": "walk",
-                "coordinate": [32989, 32115, 10],
+                "coordinate": [33367, 31643, 11],
                 "options": {}
               },
               {
                 "label": "",
-                "type": "walk",
-                "coordinate": [32992, 32131, 10],
-                "options": {}
+                "type": "toggleTargeting",
+                "coordinate": [],
+                "options": { "setTargeting": "on" }
+              },
+              {
+                "label": "",
+                "type": "toggleTargeting",
+                "coordinate": [],
+                "options": { "setTargeting": "off" }
               },
               {
                 "label": "",
                 "type": "walk",
-                "coordinate": [32976, 32132, 10],
+                "coordinate": [33361, 31627, 11],
                 "options": {}
               },
               {
                 "label": "",
+                "type": "toggleTargeting",
+                "coordinate": [],
+                "options": { "setTargeting": "on" }
+              },
+              {
+                "label": "",
+                "type": "toggleTargeting",
+                "coordinate": [],
+                "options": { "setTargeting": "off" }
+              },
+              {
+                "label": "",
                 "type": "walk",
-                "coordinate": [32961, 32122, 10],
+                "coordinate": [33341, 31638, 11],
                 "options": {}
+              },
+              {
+                "label": "",
+                "type": "toggleTargeting",
+                "coordinate": [],
+                "options": { "setTargeting": "on" }
+              },
+              {
+                "label": "",
+                "type": "toggleTargeting",
+                "coordinate": [],
+                "options": { "setTargeting": "off" }
+              },
+              {
+                "label": "",
+                "type": "walk",
+                "coordinate": [33351, 31660, 11],
+                "options": {}
+              },
+              {
+                "label": "",
+                "type": "toggleTargeting",
+                "coordinate": [],
+                "options": { "setTargeting": "on" }
+              },
+              {
+                "label": "",
+                "type": "toggleTargeting",
+                "coordinate": [],
+                "options": { "setTargeting": "off" }
+              },
+              {
+                "label": "",
+                "type": "walk",
+                "coordinate": [33384, 31667, 11],
+                "options": {}
+              },
+              {
+                "label": "",
+                "type": "toggleTargeting",
+                "coordinate": [],
+                "options": { "setTargeting": "on" }
+              },
+              {
+                "label": "",
+                "type": "toggleTargeting",
+                "coordinate": [],
+                "options": { "setTargeting": "off" }
+              },
+              {
+                "label": "",
+                "type": "walk",
+                "coordinate": [33383, 31683, 11],
+                "options": {}
+              },
+              {
+                "label": "",
+                "type": "toggleTargeting",
+                "coordinate": [],
+                "options": { "setTargeting": "on" }
+              },
+              {
+                "label": "",
+                "type": "toggleTargeting",
+                "coordinate": [],
+                "options": { "setTargeting": "off" }
+              },
+              {
+                "label": "",
+                "type": "walk",
+                "coordinate": [33365, 31674, 11],
+                "options": {}
+              },
+              {
+                "label": "",
+                "type": "toggleTargeting",
+                "coordinate": [],
+                "options": { "setTargeting": "on" }
+              },
+              {
+                "label": "",
+                "type": "toggleTargeting",
+                "coordinate": [],
+                "options": { "setTargeting": "off" }
+              },
+              {
+                "label": "",
+                "type": "walk",
+                "coordinate": [33373, 31643, 11],
+                "options": {}
+              },
+              {
+                "label": "",
+                "type": "toggleTargeting",
+                "coordinate": [],
+                "options": { "setTargeting": "on" }
+              },
+              {
+                "label": "",
+                "type": "toggleTargeting",
+                "coordinate": [],
+                "options": { "setTargeting": "off" }
               }
             ]
           }
         },
         "comboSpells": {
-          "enabled": false,
+          "enabled": true,
           "items": [
+            {
+              "enabled": true,
+              "name": "3 ou -",
+              "creatures": { "compare": "greaterThanOrEqual", "value": 3 },
+              "spells": [
+                { "name": "exori", "hotkey": "f1" },
+                { "name": "exori mas", "hotkey": "f5" }
+              ],
+              "currentSpellIndex": 0
+            },
             {
               "enabled": false,
               "name": "3 ou -",
-              "creatures": { "compare": "lessThan", "value": 4 },
+              "creatures": { "compare": "lessThan", "value": 2 },
               "spells": [
                 { "name": "exori", "hotkey": "f1" },
                 { "name": "exori gran", "hotkey": "f2" },
@@ -120,7 +281,7 @@
             {
               "enabled": false,
               "name": "4 ou +",
-              "creatures": { "compare": "greaterThanOrEqual", "value": 4 },
+              "creatures": { "compare": "greaterThanOrEqual", "value": 3 },
               "spells": [
                 { "name": "exori gran", "hotkey": "f2" },
                 { "name": "exori mas", "hotkey": "f5" },
@@ -173,7 +334,7 @@
             "firstManaPotion": {
               "enabled": true,
               "hotkey": "2",
-              "manaPercentageLessThanOrEqual": 10
+              "manaPercentageLessThanOrEqual": 50
             }
           },
           "spells": {

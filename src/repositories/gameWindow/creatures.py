@@ -282,9 +282,10 @@ def hasTargetToCreatureBySlot(gameWindowCreatures: CreatureList, slot: Slot, coo
         return False
     gameWindowWalkableFloorsSqms = getGameWindowWalkableFloorsSqms(
         walkableFloorsSqms[coordinate[2]], coordinate)
-    creaturesSlots = gameWindowCreatures['slot'][:, [1, 0]]
-    gameWindowWalkableFloorsSqms[creaturesSlots[:,
-                                                0], creaturesSlots[:, 1]] = 0
+    gameWindowCreatures = np.array(gameWindowCreatures)
+    # creaturesSlots = gameWindowCreatures['slot'][:, [1, 0]]
+    creaturesSlots = np.array([(y, x) for item in gameWindowCreatures for x, y in [item['slot']]])
+    gameWindowWalkableFloorsSqms[creaturesSlots[:, 0], creaturesSlots[:, 1]] = 0
     gameWindowWalkableFloorsSqms[slot[1], slot[0]] = 1
     x = coordinate[0] + slot[0] - coordinate[0]
     y = coordinate[1] + slot[1] - coordinate[1]
@@ -348,22 +349,22 @@ def isTrappedByCreatures(gameWindowCreatures: CreatureList, radarCoordinate: Coo
             x = gameWindowCreature['coordinate'][0] - radarCoordinate[0] + 1
             y = gameWindowCreature['coordinate'][1] - radarCoordinate[1] + 1
             playerBox[y, x] = 0
-    if playerBox[0, 0] == 1:
-        return False
+    # if playerBox[0, 0] == 1:
+    #     return False
     if playerBox[0, 1] == 1:
         return False
-    if playerBox[0, 2] == 1:
-        return False
+    # if playerBox[0, 2] == 1:
+    #     return False
     if playerBox[1, 0] == 1:
         return False
     if playerBox[1, 2] == 1:
         return False
-    if playerBox[2, 0] == 1:
-        return False
+    # if playerBox[2, 0] == 1:
+    #     return False
     if playerBox[2, 1] == 1:
         return False
-    if playerBox[2, 2] == 1:
-        return False
+    # if playerBox[2, 2] == 1:
+    #     return False
     return True
 
 

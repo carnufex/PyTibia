@@ -1,0 +1,185 @@
+"waypoints": {
+    "items": [
+      {
+        "label": "start",
+        "type": "walk",
+        "coordinate": [33285, 32526, 10],
+        "options": {}
+      },
+      {
+        "label": "",
+        "type": "walk",
+        "coordinate": [33284, 32511, 10],
+        "options": {}
+      },
+      {
+        "label": "",
+        "type": "walk",
+        "coordinate": [33287, 32501, 10],
+        "options": {}
+      },
+      {
+        "label": "",
+        "type": "walk",
+        "coordinate": [33296, 32504, 10],
+        "options": {}
+      },
+      {
+        "label": "",
+        "type": "walk",
+        "coordinate": [33297, 32496, 10],
+        "options": {}
+      },
+      {
+        "label": "",
+        "type": "walk",
+        "coordinate": [33297, 32487, 10],
+        "options": {}
+      },
+      {
+        "label": "",
+        "type": "walk",
+        "coordinate": [33295, 32497, 10],
+        "options": {}
+      },
+      {
+        "label": "",
+        "type": "walk",
+        "coordinate": [33287, 32501, 10],
+        "options": {}
+      },
+      {
+        "label": "",
+        "type": "walk",
+        "coordinate": [33269, 32514, 10],
+        "options": {}
+      },
+      {
+        "label": "",
+        "type": "moveUp",
+        "coordinate": [33268, 32514, 10],
+        "options": { "direction": "west" }
+      },
+      {
+        "label": "",
+        "type": "walk",
+        "coordinate": [33260, 32512, 9],
+        "options": {}
+      },
+      {
+        "label": "",
+        "type": "walk",
+        "coordinate": [33261, 32505, 9],
+        "options": {}
+      },
+      {
+        "label": "",
+        "type": "walk",
+        "coordinate": [33255, 32519, 9],
+        "options": {}
+      },
+      {
+        "label": "",
+        "type": "walk",
+        "coordinate": [33244, 32517, 9],
+        "options": {}
+      },
+      {
+        "label": "",
+        "type": "walk",
+        "coordinate": [33244, 32508, 9],
+        "options": {}
+      },
+      {
+        "label": "",
+        "type": "walk",
+        "coordinate": [33231, 32513, 9],
+        "options": {}
+      },
+      {
+        "label": "",
+        "type": "moveUp",
+        "coordinate": [33231, 32514, 9],
+        "options": { "direction": "south" }
+      },
+      {
+        "label": "",
+        "type": "walk",
+        "coordinate": [33233, 32515, 8],
+        "options": {}
+      },
+      {
+        "label": "",
+        "type": "walk",
+        "coordinate": [33241, 32513, 8],
+        "options": {}
+      },
+      {
+        "label": "",
+        "type": "walk",
+        "coordinate": [33230, 32512, 8],
+        "options": {}
+      },
+      {
+        "label": "",
+        "type": "walk",
+        "coordinate": [33223, 32500, 8],
+        "options": {}
+      },
+      {
+        "label": "",
+        "type": "walk",
+        "coordinate": [33228, 32510, 8],
+        "options": {}
+      },
+      {
+        "label": "",
+        "type": "walk",
+        "coordinate": [33230, 32515, 8],
+        "options": {}
+      },
+      {
+        "label": "",
+        "type": "moveDown",
+        "coordinate": [33230, 32514, 8],
+        "options": { "direction": "north" }
+      },
+      {
+        "label": "",
+        "type": "walk",
+        "coordinate": [33239, 32512, 9],
+        "options": {}
+      },
+      {
+        "label": "",
+        "type": "walk",
+        "coordinate": [33252, 32514, 9],
+        "options": {}
+      },
+      {
+        "label": "",
+        "type": "walk",
+        "coordinate": [33267, 32514, 9],
+        "options": {}
+      },
+      {
+        "label": "",
+        "type": "moveDown",
+        "coordinate": [33268, 32514, 9],
+        "options": { "direction": "east" }
+      },
+      {
+        "label": "",
+        "type": "walk",
+        "coordinate": [33280, 32514, 10],
+        "options": {}
+      },
+      {
+        "label": "",
+        "type": "walk",
+        "coordinate": [33282, 32526, 10],
+        "options": {}
+      }
+    ]
+  }
+},

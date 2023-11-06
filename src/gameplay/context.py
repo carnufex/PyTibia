@@ -209,6 +209,7 @@ context = {
         'hp': None,
         'manaPercentage': None,
         'mana': None,
+        'isParalyzed': False,
     },
     'targeting': {
         'enabled': False,

@@ -119,4 +119,6 @@ def getChatMessagesContainerPosition(screenshot: GrayImage) -> BBox:
     leftSidebarArrows = getLeftArrowPosition(screenshot)
     chatMenu = getChatMenuPosition(screenshot)
     chatStatus = getChatStatus(screenshot)
+    if (chatStatus[0] is None):
+        return
     return leftSidebarArrows[0] + 5, chatMenu[1] + 18, chatStatus[0][0] + 40, (chatStatus[0][1] - 6) - (chatMenu[1] + 13)

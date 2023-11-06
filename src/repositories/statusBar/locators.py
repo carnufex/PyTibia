@@ -16,3 +16,13 @@ def getHpIconPosition(screenshot: GrayImage) -> Union[BBox, None]:
 @cacheObjectPosition
 def getManaIconPosition(screenshot: GrayImage) -> Union[BBox, None]:
     return locate(screenshot, images['icons']['mana'])
+
+@cacheObjectPosition
+def getStopButtonPosition(screenshot: GrayImage) -> Union[BBox, None]:
+    return locate(screenshot, images['icons']['stopButton'])
+
+def getParalyze(screenshot: GrayImage) -> bool:
+    found = locate(screenshot, images['icons']['paralyze'])
+    if found is None:
+        return False
+    return True

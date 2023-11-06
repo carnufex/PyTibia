@@ -1,5 +1,5 @@
 from src.repositories.skills.core import getHp, getMana
-from src.repositories.statusBar.core import getManaPercentage, getHpPercentage
+from src.repositories.statusBar.core import getManaPercentage, getHpPercentage, getIsParalyzed
 from ...typings import Context
 
 
@@ -9,4 +9,5 @@ def setMapPlayerStatusMiddleware(context: Context) -> Context:
     context['statusBar']['hpPercentage'] = getHpPercentage(context['screenshot'])
     context['statusBar']['mana'] = getMana(context['screenshot'])
     context['statusBar']['manaPercentage'] = getManaPercentage(context['screenshot'])
+    context['statusBar']['isParalyzed'] = getIsParalyzed(context['screenshot'])
     return context

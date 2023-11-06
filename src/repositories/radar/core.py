@@ -82,7 +82,7 @@ def getClosestWaypointIndexFromCoordinate(coordinate: Coordinate, waypoints: Way
     closestWaypointIndex = None
     closestWaypointDistance = 9999
     for waypointIndex, waypoint in enumerate(waypoints):
-        if waypoint['coordinate'][2] != coordinate[2]:
+        if len(waypoint['coordinate']) == 0 or waypoint['coordinate'][2] != coordinate[2]:
             continue
         waypointDistance = distance.cdist(
             [(waypoint['coordinate'][0], waypoint['coordinate'][1])], [(coordinate[0], coordinate[1])]).flatten()[0]

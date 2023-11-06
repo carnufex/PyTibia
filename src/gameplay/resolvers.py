@@ -1,5 +1,7 @@
 from typing import Union
 
+from .core.tasks.toggleTargetingWaypoint import ToggleTargetingWaypoint
+
 from .core.tasks.goDownHoleWaypoint import GoDownHoleWaypointTask
 from .core.tasks.useLadderWaypoint import UseLadderWaypointTask
 from src.shared.typings import Waypoint
@@ -47,5 +49,7 @@ def resolveTasksByWaypoint(waypoint: Waypoint) -> Union[BaseTask, VectorTask]:
         return UseLadderWaypointTask(waypoint)
     elif waypoint['type'] == 'goDownHole':
         return GoDownHoleWaypointTask(waypoint)
+    elif waypoint['type'] == 'toggleTargeting':
+        return ToggleTargetingWaypoint(waypoint['options']['setTargeting'])
     elif waypoint['type'] == 'walk':
         return WalkToWaypointTask(waypoint['coordinate'])

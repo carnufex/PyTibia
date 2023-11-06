@@ -35,6 +35,12 @@ class PyTibiaThread:
             try:
                 if self.context.context['pause']:
                     continue
+                try:
+                    fps = 1 / (time() - loop_time)
+                    print(f'FPS {fps}', flush=True)
+                except:
+                    pass
+                loop_time = time()
                 startTime = time()
                 self.context.context = self.handleGameData(
                     self.context.context)
@@ -88,25 +94,30 @@ class PyTibiaThread:
                     context, LootCorpseTask(firstDeadCorpse))
             context['gameWindow']['previousMonsters'] = context['gameWindow']['monsters']
             return context
-        hasCreaturesToAttackAfterCheck = hasCreaturesToAttack(context)
-        if hasCreaturesToAttackAfterCheck:
-            if context['cavebot']['closestCreature'] is not None:
-                context['way'] = 'cavebot'
+        if context['targeting']['enabled']:
+            hasCreaturesToAttackAfterCheck = hasCreaturesToAttack(context)
+            if hasCreaturesToAttackAfterCheck:
+                if context['cavebot']['closestCreature'] is not None:
+                    context['way'] = 'cavebot'
+                else:
+                    context['way'] = 'waypoint'
             else:
                 context['way'] = 'waypoint'
+            if hasCreaturesToAttackAfterCheck and shouldAskForCavebotTasks(context):
+                currentRootTask = currentTask.rootTask if currentTask is not None else None
+                isTryingToAttackClosestCreature = currentRootTask is not None and (
+                    currentRootTask.name == 'attackClosestCreature')
+                if not isTryingToAttackClosestCreature:
+                    context = resolveCavebotTasks(context)
         else:
             context['way'] = 'waypoint'
-        if hasCreaturesToAttackAfterCheck and shouldAskForCavebotTasks(context):
-            currentRootTask = currentTask.rootTask if currentTask is not None else None
-            isTryingToAttackClosestCreature = currentRootTask is not None and (
-                currentRootTask.name == 'attackClosestCreature')
-            if not isTryingToAttackClosestCreature:
-                context = resolveCavebotTasks(context)
-        elif context['way'] == 'waypoint':
+        if context['way'] == 'waypoint':
             if context['tasksOrchestrator'].getCurrentTask(context) is None:
                 currentWaypointIndex = context['cavebot']['waypoints']['currentIndex']
                 currentWaypoint = context['cavebot']['waypoints']['items'][currentWaypointIndex]
                 context['tasksOrchestrator'].setRootTask(
                     context, resolveTasksByWaypoint(currentWaypoint))
+            # else:
+                    # print("stuck here")
         context['gameWindow']['previousMonsters'] = context['gameWindow']['monsters']
         return context

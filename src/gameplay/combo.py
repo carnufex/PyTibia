@@ -15,7 +15,7 @@ tasksOrchestrator = TasksOrchestrator()
 # TODO: do not execute algorithm when has no combo spells
 # TODO: add unit tests
 def comboSpells(context: Context):
-    if context['statusBar']['mana'] is None:
+    if context['statusBar']['mana'] is None or not context['targeting']['enabled']:
         return
     currentTask = tasksOrchestrator.getCurrentTask(context)
     if currentTask is not None:

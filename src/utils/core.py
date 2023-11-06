@@ -11,6 +11,7 @@ from PIL import Image
 from ctypes import windll
 
 
+
 # camera = dxcam.create(output_color='BGRA', output_idx=2)
 latestScreenshot = None
 

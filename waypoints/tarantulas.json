@@ -1,0 +1,108 @@
+{
+    "label": "",
+    "type": "walk",
+    "coordinate": [32805, 32684, 9],
+    "options": {}
+  },
+  {
+    "label": "",
+    "type": "walk",
+    "coordinate": [32812, 32681, 9],
+    "options": {}
+  },
+  {
+    "label": "",
+    "type": "walk",
+    "coordinate": [32818, 32681, 9],
+    "options": {}
+  },
+  {
+    "label": "",
+    "type": "walk",
+    "coordinate": [32819, 32674, 9],
+    "options": {}
+  },
+  {
+    "label": "",
+    "type": "walk",
+    "coordinate": [32826, 32667, 9],
+    "options": {}
+  },
+  {
+    "label": "",
+    "type": "walk",
+    "coordinate": [32834, 32662, 9],
+    "options": {}
+  },
+  {
+    "label": "",
+    "type": "walk",
+    "coordinate": [32839, 32655, 9],
+    "options": {}
+  },
+  {
+    "label": "",
+    "type": "walk",
+    "coordinate": [32840, 32649, 9],
+    "options": {}
+  },
+  {
+    "label": "",
+    "type": "walk",
+    "coordinate": [32842, 32646, 9],
+    "options": {}
+  },
+  {
+    "label": "",
+    "type": "useRope",
+    "coordinate": [32842, 32646, 9],
+    "options": {}
+  },
+  {
+    "label": "",
+    "type": "walk",
+    "coordinate": [32846, 32666, 8],
+    "options": {}
+  },
+  {
+    "label": "",
+    "type": "walk",
+    "coordinate": [32852, 32684, 8],
+    "options": {}
+  },
+  {
+    "label": "",
+    "type": "walk",
+    "coordinate": [32833, 32686, 8],
+    "options": {}
+  },
+  {
+    "label": "",
+    "type": "walk",
+    "coordinate": [32830, 32690, 8],
+    "options": {}
+  },
+  {
+    "label": "",
+    "type": "walk",
+    "coordinate": [32844, 32674, 8],
+    "options": {}
+  },
+  {
+    "label": "",
+    "type": "walk",
+    "coordinate": [32843, 32652, 8],
+    "options": {}
+  },
+  {
+    "label": "",
+    "type": "walk",
+    "coordinate": [32842, 32647, 8],
+    "options": {}
+  },
+  {
+    "label": "",
+    "type": "useShovel",
+    "coordinate": [32842, 32646, 8],
+    "options": {}
+  }

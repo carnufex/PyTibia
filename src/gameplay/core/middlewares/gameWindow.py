@@ -11,6 +11,8 @@ from ..tasks.selectChatTab import SelectChatTabTask
 
 # TODO: add unit tests
 def setDirectionMiddleware(context: Context) -> Context:
+    if context['radar']['coordinate'] is None:
+        return context
     if context['radar']['previousCoordinate'] is None:
         context['radar']['previousCoordinate'] = context['radar']['coordinate']
     if context['radar']['coordinate'][0] != context['radar']['previousCoordinate'][0] or context['radar']['coordinate'][1] != context['radar']['previousCoordinate'][1] or context['radar']['coordinate'][2] != context['radar']['previousCoordinate'][2]:

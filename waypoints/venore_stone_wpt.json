@@ -1,0 +1,67 @@
+
+{
+    "label": "start",
+    "type": "walk",
+    "coordinate": [33059, 32001, 13],
+    "options": {}
+  },
+  {
+    "label": "",
+    "type": "walk",
+    "coordinate": [33061, 32021, 13],
+    "options": {}
+  },
+  {
+    "label": "",
+    "type": "walk",
+    "coordinate": [33075, 32020, 13],
+    "options": {}
+  },
+  {
+    "label": "",
+    "type": "walk",
+    "coordinate": [33037, 32021, 13],
+    "options": {}
+  },
+  {
+    "label": "",
+    "type": "walk",
+    "coordinate": [33063, 32038, 13],
+    "options": {}
+  },
+  {
+    "label": "",
+    "type": "walk",
+    "coordinate": [33040, 32039, 13],
+    "options": {}
+  },
+  {
+    "label": "",
+    "type": "walk",
+    "coordinate": [33075, 32042, 13],
+    "options": {}
+  },
+  {
+    "label": "",
+    "type": "walk",
+    "coordinate": [33061, 32053, 13],
+    "options": {}
+  },
+  {
+    "label": "",
+    "type": "walk",
+    "coordinate": [33036, 32054, 13],
+    "options": {}
+  },
+  {
+    "label": "",
+    "type": "walk",
+    "coordinate": [33063, 32040, 13],
+    "options": {}
+  },
+  {
+    "label": "",
+    "type": "walk",
+    "coordinate": [33059, 32005, 13],
+    "options": {}
+  }
