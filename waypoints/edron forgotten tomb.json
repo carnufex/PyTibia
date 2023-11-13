@@ -1,0 +1,431 @@
+{
+  "_default": {
+    "1": {
+      "enabled": true,
+      "config": {
+        "backpacks": { "main": "Brocade Backpack", "loot": "Beach Backpack" },
+        "cavebot": {
+          "enabled": false,
+          "ignoreCreatures": ["Spider"],
+          "waypoints": {
+            "items": [
+              {
+                "label": "",
+                "type": "toggleTargeting",
+                "coordinate": [],
+                "options": { "setTargeting": "off" }
+              },
+              {
+                "label": "",
+                "type": "walk",
+                "coordinate": [33405, 31693, 11],
+                "options": {}
+              },
+              {
+                "label": "",
+                "type": "toggleTargeting",
+                "coordinate": [],
+                "options": { "setTargeting": "on" }
+              },
+              {
+                "label": "",
+                "type": "toggleTargeting",
+                "coordinate": [],
+                "options": { "setTargeting": "off" }
+              },
+              {
+                "label": "",
+                "type": "walk",
+                "coordinate": [33406, 31677, 11],
+                "options": {}
+              },
+              {
+                "label": "",
+                "type": "toggleTargeting",
+                "coordinate": [],
+                "options": { "setTargeting": "on" }
+              },
+              {
+                "label": "",
+                "type": "toggleTargeting",
+                "coordinate": [],
+                "options": { "setTargeting": "off" }
+              },
+              {
+                "label": "",
+                "type": "walk",
+                "coordinate": [33405, 31662, 11],
+                "options": {}
+              },
+              {
+                "label": "",
+                "type": "toggleTargeting",
+                "coordinate": [],
+                "options": { "setTargeting": "on" }
+              },
+              {
+                "label": "",
+                "type": "toggleTargeting",
+                "coordinate": [],
+                "options": { "setTargeting": "off" }
+              },
+              {
+                "label": "",
+                "type": "walk",
+                "coordinate": [33406, 31646, 11],
+                "options": {}
+              },
+              {
+                "label": "",
+                "type": "toggleTargeting",
+                "coordinate": [],
+                "options": { "setTargeting": "on" }
+              },
+              {
+                "label": "",
+                "type": "toggleTargeting",
+                "coordinate": [],
+                "options": { "setTargeting": "off" }
+              },
+              {
+                "label": "",
+                "type": "walk",
+                "coordinate": [33385, 31643, 11],
+                "options": {}
+              },
+              {
+                "label": "",
+                "type": "toggleTargeting",
+                "coordinate": [],
+                "options": { "setTargeting": "on" }
+              },
+              {
+                "label": "",
+                "type": "toggleTargeting",
+                "coordinate": [],
+                "options": { "setTargeting": "off" }
+              },
+              {
+                "label": "",
+                "type": "walk",
+                "coordinate": [33369, 31643, 11],
+                "options": {}
+              },
+              {
+                "label": "",
+                "type": "toggleTargeting",
+                "coordinate": [],
+                "options": { "setTargeting": "on" }
+              },
+              {
+                "label": "",
+                "type": "toggleTargeting",
+                "coordinate": [],
+                "options": { "setTargeting": "off" }
+              },
+              {
+                "label": "",
+                "type": "walk",
+                "coordinate": [33360, 31626, 11],
+                "options": {}
+              },
+              {
+                "label": "",
+                "type": "toggleTargeting",
+                "coordinate": [],
+                "options": { "setTargeting": "on" }
+              },
+              {
+                "label": "",
+                "type": "toggleTargeting",
+                "coordinate": [],
+                "options": { "setTargeting": "off" }
+              },
+              {
+                "label": "",
+                "type": "walk",
+                "coordinate": [33341, 31640, 11],
+                "options": {}
+              },
+              {
+                "label": "",
+                "type": "toggleTargeting",
+                "coordinate": [],
+                "options": { "setTargeting": "on" }
+              },
+              {
+                "label": "",
+                "type": "toggleTargeting",
+                "coordinate": [],
+                "options": { "setTargeting": "off" }
+              },
+              {
+                "label": "",
+                "type": "walk",
+                "coordinate": [33353, 31660, 11],
+                "options": {}
+              },
+              {
+                "label": "",
+                "type": "toggleTargeting",
+                "coordinate": [],
+                "options": { "setTargeting": "on" }
+              },
+              {
+                "label": "",
+                "type": "toggleTargeting",
+                "coordinate": [],
+                "options": { "setTargeting": "off" }
+              },
+              {
+                "label": "",
+                "type": "walk",
+                "coordinate": [33384, 31667, 11],
+                "options": {}
+              },
+              {
+                "label": "",
+                "type": "toggleTargeting",
+                "coordinate": [],
+                "options": { "setTargeting": "on" }
+              },
+              {
+                "label": "",
+                "type": "toggleTargeting",
+                "coordinate": [],
+                "options": { "setTargeting": "off" }
+              },
+              {
+                "label": "",
+                "type": "walk",
+                "coordinate": [33384, 31683, 11],
+                "options": {}
+              },
+              {
+                "label": "",
+                "type": "toggleTargeting",
+                "coordinate": [],
+                "options": { "setTargeting": "on" }
+              },
+              {
+                "label": "",
+                "type": "toggleTargeting",
+                "coordinate": [],
+                "options": { "setTargeting": "off" }
+              },
+              {
+                "label": "",
+                "type": "walk",
+                "coordinate": [33365, 31675, 11],
+                "options": {}
+              },
+              {
+                "label": "",
+                "type": "toggleTargeting",
+                "coordinate": [],
+                "options": { "setTargeting": "on" }
+              },
+              {
+                "label": "",
+                "type": "toggleTargeting",
+                "coordinate": [],
+                "options": { "setTargeting": "off" }
+              },
+              {
+                "label": "",
+                "type": "walk",
+                "coordinate": [33371, 31643, 11],
+                "options": {}
+              },
+              {
+                "label": "",
+                "type": "toggleTargeting",
+                "coordinate": [],
+                "options": { "setTargeting": "on" }
+              },
+              {
+                "label": "",
+                "type": "toggleTargeting",
+                "coordinate": [],
+                "options": { "setTargeting": "off" }
+              },
+              {
+                "label": "",
+                "type": "walk",
+                "coordinate": [33386, 31643, 11],
+                "options": {}
+              },
+              {
+                "label": "",
+                "type": "toggleTargeting",
+                "coordinate": [],
+                "options": { "setTargeting": "on" }
+              },
+              {
+                "label": "",
+                "type": "toggleTargeting",
+                "coordinate": [],
+                "options": { "setTargeting": "off" }
+              },
+              {
+                "label": "",
+                "type": "walk",
+                "coordinate": [33404, 31662, 11],
+                "options": {}
+              },
+              {
+                "label": "",
+                "type": "toggleTargeting",
+                "coordinate": [],
+                "options": { "setTargeting": "on" }
+              },
+              {
+                "label": "",
+                "type": "toggleTargeting",
+                "coordinate": [],
+                "options": { "setTargeting": "off" }
+              },
+              {
+                "label": "",
+                "type": "walk",
+                "coordinate": [33405, 31677, 11],
+                "options": {}
+              },
+              {
+                "label": "",
+                "type": "toggleTargeting",
+                "coordinate": [],
+                "options": { "setTargeting": "on" }
+              },
+              {
+                "label": "",
+                "type": "toggleTargeting",
+                "coordinate": [],
+                "options": { "setTargeting": "off" }
+              }
+            ]
+          }
+        },
+        "comboSpells": {
+          "enabled": true,
+          "items": [
+            {
+              "enabled": true,
+              "name": "3 ou -",
+              "creatures": { "compare": "greaterThanOrEqual", "value": 3 },
+              "spells": [
+                { "name": "exori", "hotkey": "f1" },
+                { "name": "exori mas", "hotkey": "f5" }
+              ],
+              "currentSpellIndex": 0
+            },
+            {
+              "enabled": false,
+              "name": "3 ou -",
+              "creatures": { "compare": "lessThan", "value": 2 },
+              "spells": [
+                { "name": "exori", "hotkey": "f1" },
+                { "name": "exori gran", "hotkey": "f2" },
+                { "name": "exori", "hotkey": "f1" },
+                { "name": "exori min", "hotkey": "f6" },
+                { "name": "exori", "hotkey": "f1" }
+              ],
+              "currentSpellIndex": 0
+            },
+            {
+              "enabled": false,
+              "name": "4 ou +",
+              "creatures": { "compare": "greaterThanOrEqual", "value": 3 },
+              "spells": [
+                { "name": "exori gran", "hotkey": "f2" },
+                { "name": "exori mas", "hotkey": "f5" },
+                { "name": "exori", "hotkey": "f1" },
+                { "name": "exori gran", "hotkey": "f2" },
+                { "name": "exori mas", "hotkey": "f5" }
+              ],
+              "currentSpellIndex": 0
+            }
+          ]
+        },
+        "healing": {
+          "highPriority": {
+            "healthFood": {
+              "enabled": false,
+              "hotkey": "3",
+              "hpPercentageLessThanOrEqual": 60
+            },
+            "manaFood": {
+              "enabled": false,
+              "hotkey": "4",
+              "manaPercentageLessThanOrEqual": 10
+            },
+            "swapRing": {
+              "enabled": false,
+              "tankRing": {
+                "hotkey": "f11",
+                "hpPercentageLessThanOrEqual": 100
+              },
+              "mainRing": { "hotkey": "f12", "hpPercentageGreaterThan": 100 },
+              "tankRingAlwaysEquipped": true
+            },
+            "swapAmulet": {
+              "enabled": false,
+              "tankAmulet": {
+                "hotkey": "u",
+                "hpPercentageLessThanOrEqual": 50
+              },
+              "mainAmulet": { "hotkey": "i", "hpPercentageGreaterThan": 90 },
+              "tankAmuletAlwaysEquipped": false
+            }
+          },
+          "potions": {
+            "firstHealthPotion": {
+              "enabled": true,
+              "hotkey": "1",
+              "hpPercentageLessThanOrEqual": 30,
+              "manaPercentageGreaterThanOrEqual": 0
+            },
+            "firstManaPotion": {
+              "enabled": true,
+              "hotkey": "2",
+              "manaPercentageLessThanOrEqual": 50
+            }
+          },
+          "spells": {
+            "criticalHealing": {
+              "enabled": false,
+              "hotkey": "5",
+              "hpPercentageLessThanOrEqual": 70,
+              "manaPercentageGreaterThanOrEqual": 20,
+              "spell": "exura med ico"
+            },
+            "lightHealing": {
+              "enabled": true,
+              "hotkey": "6",
+              "hpPercentageLessThanOrEqual": 80,
+              "manaPercentageGreaterThanOrEqual": 20,
+              "spell": "exura ico"
+            },
+            "utura": {
+              "enabled": false,
+              "hotkey": "7",
+              "hpPercentageLessThanOrEqual": 70,
+              "manaPercentageGreaterThanOrEqual": 30
+            },
+            "uturaGran": {
+              "enabled": false,
+              "hotkey": "8",
+              "hpPercentageLessThanOrEqual": 70,
+              "manaPercentageGreaterThanOrEqual": 30
+            }
+          },
+          "eatFood": {
+            "enabled": true,
+            "hotkey": "f",
+            "eatWhenFoodIslessOrEqual": 0
+          }
+        }
+      }
+    }
+  }
+}

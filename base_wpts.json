@@ -1,0 +1,30 @@
+{
+  "label": "",
+  "type": "walk",
+  "coordinate": [32746,31081,8],
+  "options": {}
+},
+{
+  "label": "",
+  "type": "toggleTargeting",
+  "coordinate": [],
+  "options": { "setTargeting": "on" }
+},
+{
+  "label": "",
+  "type": "toggleTargeting",
+  "coordinate": [],
+  "options": { "setTargeting": "off" }
+},
+{
+  "label": "",
+  "type": "moveUp",
+  "coordinate": [33139,32335,10],
+  "options": {"direction": "north"}
+},
+{
+  "label": "",
+  "type": "moveDown",
+  "coordinate": [33133,32321,9],
+  "options": {"direction": "east"}
+},

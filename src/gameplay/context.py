@@ -212,7 +212,7 @@ context = {
         'isParalyzed': False,
     },
     'targeting': {
-        'enabled': False,
+        'enabled': True,
         'creatures': {},
         'canIgnoreCreatures': True,
         'hasIgnorableCreatures': False,

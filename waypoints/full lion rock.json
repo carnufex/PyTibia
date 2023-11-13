@@ -6,79 +6,145 @@
         "backpacks": { "main": "Brocade Backpack", "loot": "Beach Backpack" },
         "cavebot": {
           "enabled": false,
-          "ignoreCreatures": ["Vampire"],
+          "ignoreCreatures": ["Larva"],
           "waypoints": {
             "items": [
               {
-                "label": "",
+                "label": "start",
                 "type": "walk",
-                "coordinate": [32760, 31083, 8],
+                "coordinate": [33120, 32305, 9],
                 "options": {}
               },
               {
                 "label": "",
                 "type": "walk",
-                "coordinate": [32785, 31097, 8],
+                "coordinate": [33116, 32324, 9],
                 "options": {}
               },
               {
                 "label": "",
                 "type": "walk",
-                "coordinate": [32786, 31079, 8],
+                "coordinate": [33132, 32321, 9],
                 "options": {}
               },
               {
-                "label": "before gs",
-                "type": "walk",
-                "coordinate": [32761, 31073, 8],
-                "options": {}
+                "label": "",
+                "type": "moveDown",
+                "coordinate": [33133, 32321, 9],
+                "options": { "direction": "east" }
               },
               {
-                "label": "after gs",
+                "label": "",
                 "type": "walk",
-                "coordinate": [32765, 31042, 8],
+                "coordinate": [33142, 32321, 10],
                 "options": {}
               },
               {
                 "label": "",
                 "type": "walk",
-                "coordinate": [32746, 31047, 8],
-                "options": {}
-              },
-              {
-                "label": "lich",
-                "type": "walk",
-                "coordinate": [32745, 31034, 8],
+                "coordinate": [33133, 32328, 10],
                 "options": {}
               },
               {
                 "label": "",
                 "type": "walk",
-                "coordinate": [32747, 31021, 8],
+                "coordinate": [33139, 32336, 10],
+                "options": {}
+              },
+              {
+                "label": "",
+                "type": "moveUp",
+                "coordinate": [33139, 32335, 10],
+                "options": { "direction": "north" }
+              },
+              {
+                "label": "",
+                "type": "walk",
+                "coordinate": [33141, 32334, 9],
                 "options": {}
               },
               {
                 "label": "",
                 "type": "walk",
-                "coordinate": [32730, 31025, 8],
+                "coordinate": [33141, 32337, 9],
                 "options": {}
               },
               {
                 "label": "",
                 "type": "walk",
-                "coordinate": [32716, 31033, 8],
+                "coordinate": [33131, 32345, 9],
                 "options": {}
               },
               {
                 "label": "",
                 "type": "walk",
-                "coordinate": [32716, 31062, 8],
+                "coordinate": [33141, 32356, 9],
                 "options": {}
               },
               {
                 "label": "",
                 "type": "walk",
-                "coordinate": [32746, 31081, 8],
+                "coordinate": [33162, 32364, 9],
+                "options": {}
+              },
+              {
+                "label": "",
+                "type": "walk",
+                "coordinate": [33173, 32354, 9],
+                "options": {}
+              },
+              {
+                "label": "",
+                "type": "walk",
+                "coordinate": [33165, 32330, 9],
+                "options": {}
+              },
+              {
+                "label": "",
+                "type": "walk",
+                "coordinate": [33139, 32334, 9],
+                "options": {}
+              },
+              {
+                "label": "",
+                "type": "moveDown",
+                "coordinate": [33139, 32335, 9],
+                "options": { "direction": "south" }
+              },
+              {
+                "label": "",
+                "type": "walk",
+                "coordinate": [33141, 32336, 10],
+                "options": {}
+              },
+              {
+                "label": "",
+                "type": "walk",
+                "coordinate": [33134, 32321, 10],
+                "options": {}
+              },
+              {
+                "label": "",
+                "type": "moveUp",
+                "coordinate": [33133, 32321, 10],
+                "options": { "direction": "west" }
+              },
+              {
+                "label": "",
+                "type": "walk",
+                "coordinate": [33117, 32323, 9],
+                "options": {}
+              },
+              {
+                "label": "",
+                "type": "walk",
+                "coordinate": [33130, 32312, 9],
+                "options": {}
+              },
+              {
+                "label": "",
+                "type": "walk",
+                "coordinate": [33131, 32301, 9],
                 "options": {}
               }
             ]
@@ -91,7 +157,10 @@
               "enabled": true,
               "name": "3 ou -",
               "creatures": { "compare": "lessThan", "value": 2 },
-              "spells": [{ "name": "exori san", "hotkey": "f4" }],
+              "spells": [
+                { "name": "exori ico", "hotkey": "f3" },
+                { "name": "exori hur", "hotkey": "f4" }
+              ],
               "currentSpellIndex": 0
             },
             {
@@ -99,8 +168,8 @@
               "name": "3 ou -",
               "creatures": { "compare": "greaterThanOrEqual", "value": 2 },
               "spells": [
-                { "name": "exori", "hotkey": "f8" },
-                { "name": "exori san", "hotkey": "f4" }
+                { "name": "exori", "hotkey": "f1" },
+                { "name": "exori mas", "hotkey": "f5" }
               ],
               "currentSpellIndex": 0
             },
@@ -145,7 +214,7 @@
               "manaPercentageLessThanOrEqual": 10
             },
             "swapRing": {
-              "enabled": false,
+              "enabled": true,
               "tankRing": {
                 "hotkey": "f11",
                 "hpPercentageLessThanOrEqual": 100
@@ -173,23 +242,23 @@
             "firstManaPotion": {
               "enabled": true,
               "hotkey": "2",
-              "manaPercentageLessThanOrEqual": 70
+              "manaPercentageLessThanOrEqual": 50
             }
           },
           "spells": {
             "criticalHealing": {
-              "enabled": true,
-              "hotkey": "f3",
-              "hpPercentageLessThanOrEqual": 60,
+              "enabled": false,
+              "hotkey": "5",
+              "hpPercentageLessThanOrEqual": 70,
               "manaPercentageGreaterThanOrEqual": 20,
-              "spell": "exura san"
+              "spell": "exura med ico"
             },
             "lightHealing": {
               "enabled": true,
-              "hotkey": "f2",
-              "hpPercentageLessThanOrEqual": 80,
-              "manaPercentageGreaterThanOrEqual": 10,
-              "spell": "exura gran"
+              "hotkey": "6",
+              "hpPercentageLessThanOrEqual": 90,
+              "manaPercentageGreaterThanOrEqual": 20,
+              "spell": "exura ico"
             },
             "utura": {
               "enabled": false,

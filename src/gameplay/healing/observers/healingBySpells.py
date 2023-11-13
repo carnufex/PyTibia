@@ -20,25 +20,25 @@ def healingBySpells(context: Context):
     if context['healing']['spells']['criticalHealing']['enabled']:
         if context['statusBar']['hpPercentage'] <= context['healing']['spells']['criticalHealing']['hpPercentageLessThanOrEqual'] and context['statusBar']['mana'] >= spells[context['healing']['spells']['lightHealing']['spell']]['manaNeeded'] and not hasCooldownByName(context['screenshot'], context['healing']['spells']['criticalHealing']['spell']):
             tasksOrchestrator.setRootTask(
-                context, UseHotkeyTask('5'))
+                context, UseHotkeyTask(context['healing']['spells']['criticalHealing']['hotkey']))
             return
     if context['healing']['spells']['lightHealing']['enabled']:
         if context['statusBar']['hpPercentage'] <= context['healing']['spells']['lightHealing']['hpPercentageLessThanOrEqual'] and context['statusBar']['mana'] >= spells[context['healing']['spells']['lightHealing']['spell']]['manaNeeded'] and not hasCooldownByName(context['screenshot'], context['healing']['spells']['lightHealing']['spell']):
             tasksOrchestrator.setRootTask(
-                context, UseHotkeyTask('6'))
+                context, UseHotkeyTask(context['healing']['spells']['criticalHealing']['hotkey']))
             return
     if context['healing']['spells']['utura']['enabled']:
         if context['statusBar']['mana'] >= spells['utura']['manaNeeded'] and not hasCooldownByName(context['screenshot'], 'utura'):
             tasksOrchestrator.setRootTask(
-                context, UseHotkeyTask('7'))
+                context, UseHotkeyTask(context['healing']['spells']['criticalHealing']['hotkey']))
             return
     if context['healing']['spells']['uturaGran']['enabled']:
         if context['statusBar']['mana'] >= spells['utura gran']['manaNeeded'] and not hasCooldownByName(context['screenshot'], 'utura gran'):
             tasksOrchestrator.setRootTask(
-                context, UseHotkeyTask('8'))
+                context, UseHotkeyTask(context['healing']['spells']['criticalHealing']['hotkey']))
             return
     if context['statusBar']['isParalyzed']:
         if context['statusBar']['mana'] >= spells[context['healing']['spells']['lightHealing']['spell']]['manaNeeded'] and not hasCooldownByName(context['screenshot'], context['healing']['spells']['lightHealing']['spell']):
             tasksOrchestrator.setRootTask(
-                context, UseHotkeyTask('6'))
+                context, UseHotkeyTask(context['healing']['spells']['criticalHealing']['hotkey']))
     

@@ -4,8 +4,10 @@ from ...typings import Context
 
 # TODO: add unit tests
 def setRadarMiddleware(context: Context) -> Context:
-    context['radar']['coordinate'] = getCoordinate(
+    coord = getCoordinate(
         context['screenshot'], previousCoordinate=context['radar']['previousCoordinate'])
+    if coord is not None:
+        context['radar']['coordinate'] = coord
     return context
 
 

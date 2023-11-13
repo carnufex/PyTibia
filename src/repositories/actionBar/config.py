@@ -53,6 +53,14 @@ images = {
         'utori kor': loadFromRGBToGray(f'{cooldownsImagesPath}/utoriKor.png'),
         'utura': loadFromRGBToGray(f'{cooldownsImagesPath}/utura.png'),
         'utura gran': loadFromRGBToGray(f'{cooldownsImagesPath}/uturaGran.png'),
+        'exori ico': loadFromRGBToGray(f'{cooldownsImagesPath}/exoriIco.png'),
+        'exori hur': loadFromRGBToGray(f'{cooldownsImagesPath}/exoriHur.png'),
+        'exura san': loadFromRGBToGray(f'{cooldownsImagesPath}/exuraSan.png'),
+        'exura gran': loadFromRGBToGray(f'{cooldownsImagesPath}/exuraGran.png'),
+        'exura': loadFromRGBToGray(f'{cooldownsImagesPath}/exura.png'),
+        'exori san': loadFromRGBToGray(f'{cooldownsImagesPath}/exoriSan.png'),
+        'exevoMasSan': loadFromRGBToGray(f'{cooldownsImagesPath}/exevoMasSan.png'),
+
     },
     'digits': {
         hashit(loadFromRGBToGray(f'{digitsImagesPath}/0.png')): 0,

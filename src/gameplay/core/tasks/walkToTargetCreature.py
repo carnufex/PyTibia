@@ -15,6 +15,7 @@ class WalkToTargetCreatureTask(VectorTask):
         self.name = 'walkToTargetCreature'
         self.manuallyTerminable = True
         self.targetCreatureCoordinateSinceLastRestart = None
+        self.distance = 0
 
     def onBeforeStart(self, context: Context) -> Context:
         self.calculatePathToTargetCreature(context)
@@ -55,13 +56,13 @@ class WalkToTargetCreatureTask(VectorTask):
         walkpoints = []
         dist = distance.cdist([context['radar']['coordinate']], [
                               context['cavebot']['targetCreature']['coordinate']]).flatten()[0]
-        if dist < 2:
+        if dist < self.distance + 2:
             gameWindowHeight, gameWindowWidth = context['gameWindow']['image'].shape
             gameWindowCenter = (gameWindowWidth // 2, gameWindowHeight // 2)
             monsterGameWindowCoordinate = context['cavebot']['targetCreature']['gameWindowCoordinate']
             moduleX = abs(gameWindowCenter[0] - monsterGameWindowCoordinate[0])
             moduleY = abs(gameWindowCenter[1] - monsterGameWindowCoordinate[1])
-            if moduleX > 64 or moduleY > 64:
+            if moduleX > 64 * self.distance+1 or moduleY > 64 * self.distance+1:
                 walkpoints.append(context['cavebot']
                                   ['targetCreature']['coordinate'])
         else:

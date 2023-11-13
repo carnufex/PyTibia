@@ -30,6 +30,13 @@ spells = {
     'utori kor': {'manaNeeded': 30, 'cooldownInSeconds': 30},
     'utura': {'manaNeeded': 75, 'cooldownInSeconds': 60},
     'utura gran': {'manaNeeded': 165, 'cooldownInSeconds': 60},
+    'exura gran': {'manaNeeded': 70, 'cooldownInSeconds': 1},
+    'exura san': {'manaNeeded': 160, 'cooldownInSeconds': 1},
+    'exura': {'manaNeeded': 20, 'cooldownInSeconds': 1},
+    'exori san': {'manaNeeded': 20, 'cooldownInSeconds': 2},
+    'exevo mas san': {'manaNeeded': 160, 'cooldownInSeconds': 4},
+
+
 }
 
-healingSpells = ['exura infir ico', 'exura ico', 'exura med ico', 'exura gran ico', 'utura', 'utura gran']
+healingSpells = ['exura infir ico', 'exura ico', 'exura med ico', 'exura gran ico', 'utura', 'utura gran', 'exura gran', 'exura san', 'exura']

@@ -33,8 +33,6 @@ class PyTibiaThread:
     def mainloop(self):
         while True:
             try:
-                if self.context.context['pause']:
-                    continue
                 try:
                     fps = 1 / (time() - loop_time)
                     print(f'FPS {fps}', flush=True)
@@ -44,13 +42,15 @@ class PyTibiaThread:
                 startTime = time()
                 self.context.context = self.handleGameData(
                     self.context.context)
+                healingByPotions(self.context.context)
+                healingBySpells(self.context.context)
+                if self.context.context['pause']:
+                    continue
                 self.context.context = self.handleGameplayTasks(
                     self.context.context)
                 self.context.context = self.context.context['tasksOrchestrator'].do(
                     self.context.context)
                 self.context.context['radar']['lastCoordinateVisited'] = self.context.context['radar']['coordinate']
-                healingByPotions(self.context.context)
-                healingBySpells(self.context.context)
                 comboSpells(self.context.context)
                 swapAmulet(self.context.context)
                 swapRing(self.context.context)
@@ -62,8 +62,8 @@ class PyTibiaThread:
                 print('An exception occurred:', traceback.format_exc())
 
     def handleGameData(self, context):
-        if context['pause']:
-            return context
+        # if context['pause']:
+        #     return context
         context = setScreenshotMiddleware(context)
         context = setRadarMiddleware(context)
         context = setChatTabsMiddleware(context)
