@@ -15,6 +15,7 @@ from .core.tasks.refillChecker import RefillCheckerTask
 from .core.tasks.singleWalk import SingleWalkTask
 from .core.tasks.useRopeWaypoint import UseRopeWaypointTask
 from .core.tasks.useShovelWaypoint import UseShovelWaypointTask
+from .core.tasks.useTeleportWaypoint import UseTeleportWaypointTask
 from .core.tasks.walkToWaypoint import WalkToWaypointTask
 from .core.tasks.useHole import UseHoleTask
 
@@ -47,5 +48,7 @@ def resolveTasksByWaypoint(waypoint: Waypoint) -> Union[BaseTask, VectorTask]:
         return UseLadderWaypointTask(waypoint)
     elif waypoint['type'] == 'goDownHole':
         return GoDownHoleWaypointTask(waypoint)
+    elif waypoint['type'] == 'useTeleport':
+        return UseTeleportWaypointTask(waypoint)
     elif waypoint['type'] == 'walk':
         return WalkToWaypointTask(waypoint['coordinate'])

@@ -1,9 +1,9 @@
 import time
 import cv2
 import dxcam
+from farmhash import FarmHash64
 import numpy as np
 from typing import Callable, Union
-import xxhash
 from src.shared.typings import BBox, GrayImage
 import win32gui
 import win32ui
@@ -43,12 +43,7 @@ def cacheObjectPosition(func: Callable) -> Callable:
 
 # TODO: add unit tests
 def hashit(arr: np.ndarray) -> int:
-    return xxhash.xxh64(np.ascontiguousarray(arr), seed=20220605).intdigest()
-
-
-# TODO: add unit tests
-def hashitHex(arr: np.ndarray) -> str:
-    return xxhash.xxh64(np.ascontiguousarray(arr), seed=20220605).hexdigest()
+    return FarmHash64(np.ascontiguousarray(arr))
 
 
 # TODO: add unit tests

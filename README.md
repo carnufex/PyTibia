@@ -20,6 +20,14 @@ This BOT ins't ready yet, this BOT still under construction.
 
 Be free to use any function to create your custom BOT or wait for the release of v0.
 
+# 🤖 BearSharp
+
+Due to personal commitments that demand my attention, I'm temporarily pausing the development of the bot project for Tibia. However, I'm happy to share that my friend has a fantastic project called BearSharp which offers excellent features and is continually updated. While my project is down, I encourage you to check out BearSharp's exceptional work. I'm sure you'll find everything you need and more there.
+
+Here is the BearSharp discord link: https://discord.gg/rqm9E3EGBr
+
+Thank you for your understanding and I continue to look forward to resuming my work as soon as possible.
+
 # 🗺️ Features
 
 Only available for knight/paladin
@@ -173,7 +181,6 @@ If you want to become a contributor, send a message to my [**linkedin**](https:/
 A special thanks to [**Murilo Chianfa**](https://github.com/MuriloChianfa), the owner of [**TibiaAuto12**](https://github.com/MuriloChianfa/TibiaAuto12). I started this bot especially to overcome [**TibiaAuto12**](https://github.com/MuriloChianfa/TibiaAuto12) slowdowns.
 
 You can check the bot development at [https://twitch.tv/lucasmonstrocs](https://twitch.tv/lucasmonstrocs).
-You can enjoy our discord through the link [https://discord.gg/TP4axAca6a](https://discord.gg/TP4axAca6a)
 
 # 📝 License
 

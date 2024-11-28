@@ -95,9 +95,6 @@ context = {
         'lastUsedSpellAt': None,
         'items': [],
     },
-    'deposit': {
-        'lockerCoordinate': None
-    },
     'gameWindow': {
         'coordinate': None,
         'image': None,

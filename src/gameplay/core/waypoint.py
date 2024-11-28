@@ -110,6 +110,12 @@ def resolveUseLadderCoordinate(_, nextCoordinate: Coordinate) -> Checkpoint:
         'checkInCoordinate': [nextCoordinate[0], nextCoordinate[1] + 1, nextCoordinate[2] - 1],
     }
 
+def resolveUseTeleportWaypointCoordinate(_, waypoint: Coordinate) -> Checkpoint:
+    return {
+        'goalCoordinate': waypoint['coordinate'],
+        'checkInCoordinate': waypoint['coordinate'],
+    }
+
 
 # TODO: add unit tests
 def resolveGoalCoordinate(coordinate: Coordinate, waypoint):
@@ -125,4 +131,6 @@ def resolveGoalCoordinate(coordinate: Coordinate, waypoint):
         return resolveUseHoleCoordinate(coordinate, waypoint['coordinate'])
     if waypoint['type'] == 'useLadder':
         return resolveUseLadderCoordinate(coordinate, waypoint['coordinate'])
+    if waypoint['type'] == 'useTeleport':
+        return resolveUseTeleportWaypointCoordinate(coordinate, waypoint)
     return resolveFloorCoordinate(coordinate, waypoint['coordinate'])
